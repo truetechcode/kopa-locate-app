@@ -4,7 +4,7 @@
 
 ## 👋 Intro
 
-Kopa Locate is a [React Native app](https://facebook.github.io/react-native/) built with [Expo](https://github.com/expo/expo), Kopa Locate is an app to helps The National Youth Service Coups Members locate their Orientation Camps, State Secreteriats, and also read news specific to the NYSC.
+Kopa Locate is a [React Native app](https://facebook.github.io/react-native/) built with [Expo](https://github.com/expo/expo), Kopa Locate app will helps Members of The National Youth Service Coups to locate their Orientation Camps, State Secreteriats, and also read news specific to the NYSC.
 
 ## 🚀 Getting Started
 
