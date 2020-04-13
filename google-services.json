@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "16571641192",
+    "firebase_url": "https://kopa-locate.firebaseio.com",
+    "project_id": "kopa-locate",
+    "storage_bucket": "kopa-locate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16571641192:android:08f289058f03bb4d4bfadd",
+        "android_client_info": {
+          "package_name": "com.truetech.kopalocate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "16571641192-bk4lk546i9gcdhrcofdpr6p57a35dmn2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWFPeR-3o2nvqjyNg8wmds8W8LhCMwiXw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "16571641192-bk4lk546i9gcdhrcofdpr6p57a35dmn2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "Kopa Locate",
+    "slug": "kopa-locate",
+    "privacy": "public",
+    "sdkVersion": "36.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.truetech.kopalocate",
+      "versionCode": 1
+    },
+    "description": "kopa locate is an app to assist all Coups Members locate their Camp or State Secreteriat, and also read news specific to NYSC."
+  }
+}
