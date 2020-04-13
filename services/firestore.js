@@ -1,9 +1,10 @@
 import * as firebase from 'firebase';
 import '@firebase/firestore'
+import { GOOGLE_FIREBASE_API_KEY } from 'react-native-dotenv'
 
 // Initialize Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyC4ihk50ek3QEHao57nrEX8JrsxKdj9i6s",
+  apiKey: GOOGLE_FIREBASE_API_KEY,
   authDomain: "kopa-locate.firebaseapp.com",
   databaseURL: "https://kopa-locate.firebaseio.com",
   projectId: "kopa-locate",
