@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { StyleSheet, View, FlatList } from 'react-native'
+import { StyleSheet, View, FlatList, useWindowDimensions } from 'react-native'
 import { Left, Right, Icon, Text, Form, Item, Input } from 'native-base';
 
 import CommonContainer from '../components/CommonContainer'
@@ -24,6 +24,7 @@ function ItemList({ category, title, navigation }) {
 }
 
 function ResultScreen(props) {
+  const dimensions = useWindowDimensions();
   const STATE = [...Object.keys(stateCamps)]
   let filteredStates = STATE
 
@@ -41,7 +42,7 @@ function ResultScreen(props) {
 
   return (
     <CommonContainer>
-      <View style={{ height: 600 }}>
+      <View style={{ height: dimensions.height - (dimensions.height / 6) }}>
         <Form style={styles.form}>
           <Item style={{ width: '90%' }}>
             <Input placeholder="Search..." autoFocus={true} style={styles.input} value={query} onChangeText={text => changeText(text)} />

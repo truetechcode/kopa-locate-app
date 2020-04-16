@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, View } from 'react-native'
-import { Content, Button, Left, Body, Icon, Text, Item, List, ListItem } from 'native-base';
+import { Button, Left, Body, Icon, Text, Item, List, ListItem } from 'native-base';
 
 import CommonContainer from '../components/CommonContainer'
 import { TouchableOpacity } from 'react-native-gesture-handler';
@@ -27,19 +27,17 @@ const HomeScreen = ({ navigation }) => {
 
   return (
     <CommonContainer navigation={navigation}>
-      <Content>
-        <TouchableOpacity onPress={() => navigation.navigate('Address', { category: 'camp' })}>
-          <View style={{ borderColor: 'green', borderWidth: 1, width: '98%', borderRadius: 10, alignSelf: 'center', marginTop: 2 }}>
-            <Item style={{ justifyContent: 'space-between', paddingVertical: 15, paddingHorizontal: 5 }}>
-              <Icon name="search" />
-              <Text style={{ flex: 2, color: '#ccc' }}>Search for Camp</Text>
-            </Item>
-          </View>
-        </TouchableOpacity>
-        <HomeTab navigation={navigation} target='Address' category='camp' iconName='map' mainText='Locate Camp' supportText='Find the address of your Orientation Camp here.' />
-        <HomeTab navigation={navigation} target='Address' category='state' iconName='map' mainText='Locate State Secreteriat' supportText='Find the address of your state secreteriat here.' />
-        <HomeTab navigation={navigation} target='News' iconName='book' mainText='NYSC News' supportText='Get all the latest NYSC news here.' />
-      </Content>
+      <TouchableOpacity onPress={() => navigation.navigate('Address', { category: 'camp' })}>
+        <View style={{ borderColor: 'green', borderWidth: 1, width: '98%', borderRadius: 10, alignSelf: 'center', marginTop: 2 }}>
+          <Item style={{ justifyContent: 'space-between', paddingVertical: 15, paddingHorizontal: 5 }}>
+            <Icon name="search" />
+            <Text style={{ flex: 2, color: '#ccc' }}>Search for Camp</Text>
+          </Item>
+        </View>
+      </TouchableOpacity>
+      <HomeTab navigation={navigation} target='Address' category='camp' iconName='map' mainText='Locate Camp' supportText='Find the address of your Orientation Camp here.' />
+      <HomeTab navigation={navigation} target='Address' category='state' iconName='map' mainText='Locate State Secreteriat' supportText='Find the address of your state secreteriat here.' />
+      <HomeTab navigation={navigation} target='News' iconName='book' mainText='NYSC News' supportText='Get all the latest NYSC news here.' />
     </CommonContainer>
 
   );

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { StyleSheet } from 'react-native'
-import { Container, Header, Footer, FooterTab, Button, Left, Right, Body, Icon, Text } from 'native-base';
+import { Container, Content, Header, Footer, FooterTab, Button, Left, Right, Body, Icon, Text } from 'native-base';
 import { useNavigation } from '@react-navigation/native';
 
 import * as Font from 'expo-font';
@@ -60,7 +60,9 @@ const CommonContainer = props => {
   if (loading) { }
   return (
     <Container style={{}}>
-      {props.children}
+      <Content>
+        {props.children}
+      </Content>
       <FooterNav navigation={navigation} />
     </Container>
   )
