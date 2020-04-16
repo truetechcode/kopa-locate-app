@@ -13,7 +13,7 @@ const ModalScreen = ({ navigation }) => {
       </Text>
 
       <TouchableOpacity style={{ paddingHorizontal: 5 }} onPress={() => Linking.openURL('https://terveraosu.now.sh/contact')}>
-        <Text style={{ color: 'blue' }} >help@truetech.com.ng</Text>
+        <Text style={{ color: 'blue' }} >terveraosu.now.sh/contact</Text>
       </TouchableOpacity>
 
       <Button icon danger rounded style={styles.close} onPress={() => navigation.goBack()} >
